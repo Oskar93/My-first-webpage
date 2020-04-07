@@ -1,0 +1,291 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* The navigation bar */
+
+.navbar {
+  z-index: 100;
+  overflow: hidden;
+  background: rgb(34, 140, 195);
+  background: linear-gradient(
+    270deg,
+    rgba(34, 140, 195, 1) 16%,
+    rgba(255, 255, 255, 1) 54%
+  );
+
+  position: fixed; /* Set the navbar to fixed position */
+  top: 0; /* Position the navbar at the top of the page */
+  width: 100%; /* Full width */
+}
+.navbar {
+  width: 100%;
+  height: 11vh;
+  margin-top: 0px;
+  padding-top: 30px;
+  /* display: inline-block; */
+  font-size: 16px;
+  /* border: border-box;
+  border: 1px solid red; */
+}
+
+.work {
+  color: black;
+  text-underline-position: under;
+  cursor: pointer;
+  padding: 20px;
+}
+.about {
+  color: grey;
+  text-decoration: none;
+  padding-right: 20px;
+  cursor: pointer;
+}
+.contact {
+  color: grey;
+  text-decoration: none;
+  padding-left: 0;
+  padding-right: 20px;
+  cursor: pointer;
+}
+
+.about:hover {
+  color: black;
+  text-decoration: underline;
+}
+.contact:hover {
+  color: black;
+  text-decoration: underline;
+}
+
+.logo-name {
+  color: white;
+  float: right;
+  margin-right: 20px;
+  font-size: 25px;
+  text-decoration: none;
+  font-weight: 100;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+
+/* Bottom BAR nav */
+.bottombar {
+  z-index: 100;
+  overflow: hidden;
+  background: rgb(34, 140, 195);
+  background: linear-gradient(
+    90deg,
+    rgba(34, 140, 195, 1) 16%,
+    rgba(255, 255, 255, 1) 54%
+  );
+
+  position: fixed; /* Set the navbar to fixed position */
+  bottom: 0; /* Position the navbar at the top of the page */
+  width: 100%; /* Full width */
+}
+
+.bottombar {
+  width: 100%;
+  height: 10vh;
+  /* border: border-box;
+  border: 2px solid green; */
+}
+
+.bottombar a {
+  float: right;
+  color: rgb(0, 0, 0);
+  /* border:1px solid rgb(12, 24, 185) ; */
+  margin: 10px;
+  text-decoration: none;
+  font-size: 1.5rem;
+}
+p {
+  float: left;
+  left: 0%;
+  bottom: 0%;
+  font-size: 18px;
+  margin: 40px;
+  margin-left: 1px;
+}
+
+.bottombar a:hover {
+  color: blue;
+  transform: rotate(360deg);
+  transition: all 1s;
+}
+.bottombar {
+  height: 5vh;
+}
+.bottombar p {
+  font-size: 16px;
+  color: #ffffff;
+  margin: 10px;
+}
+.bottombar a {
+  font-size: 1.2rem;
+}
+
+.title {
+  margin: 80px;
+  margin-top: 150px;
+  font-size: 30px;
+  font-family: "Comic Neue", cursive;
+  font-weight: "light 300";
+}
+
+.title a {
+  color: grey;
+  font-size: 23px;
+  text-decoration: none;
+}
+
+h1 {
+  width: 20%;
+}
+
+video {
+  width: 813px;
+  height: 680px;
+  margin-top: -91px;
+  margin-left: 30%;
+}
+
+img {
+  width: 813px;
+  height: 680px;
+  margin-top: 0px;
+  margin-left: 30%;
+  padding-top: 100px;
+}
+
+h1 {
+  z-index: 100;
+  overflow: hidden;
+  background: rgb(255, 255, 255);
+  background: linear-gradient(
+    90deg,
+    rgba(255, 255, 255, 1) 10%,
+    rgba(4, 111, 167, 1) 17%,
+    rgba(255, 255, 255, 1) 37%
+  );
+  position: fixed; /* Set the navbar to fixed position */
+  /* Position the navbar at the top of the page */
+  /* Full width */
+}
+
+.fa-share-alt-square {
+  z-index: 100;
+  overflow: hidden;
+  position: fixed; /* Set the navbar to fixed position */
+  /* Position the navbar at the top of the page */
+  /* Full width */
+}
+
+/* Media Queries */
+@media screen and (max-width: 960px) {
+  .navbar {
+    width: 960px;
+    font-size: 15px;
+    height: 5vh;
+    padding-left: 100px;
+  }
+  .logo-name {
+    font-size: 16px;
+    margin-top: -20px;
+    margin-left: -210px;
+  }
+  .bottombar {
+    height: 5vh;
+  }
+  .bottombar p {
+    font-size: 16px;
+    color: #ffffff;
+    margin: 10px;
+  }
+  .bottombar a {
+    margin-right: 100px;
+    font-size: 1.2rem;
+  }
+  h1 {
+    width: 150px;
+    margin-left: 50px;
+  }
+  h1 a {
+    visibility: hidden;
+  }
+  .video video {
+    width: 960px;
+    margin: -79px;
+  }
+  img {
+    width: 960px;
+    margin: -79px;
+    margin-top: -420px;
+    position: center;
+    padding-top: 520px;
+  }
+}
+@media screen and (max-width: 1200px) {
+  .navbar {
+    font-size: 18px;
+    height: 5vh;
+  }
+  .logo-name {
+    font-size: 20px;
+    margin-top: -20px;
+    margin-right: 10px;
+  }
+  .bottombar {
+    height: 5vh;
+  }
+  .bottombar p {
+    font-size: 16px;
+    color: #ffffff;
+    margin: 10px;
+  }
+  .bottombar a {
+    font-size: 1.2rem;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .navbar {
+    font-size: 13px;
+    height: 5vh;
+  }
+  .logo-name {
+    font-size: 16px;
+    margin-top: -20px;
+    margin-right: 10px;
+  }
+  h1 {
+    width: 150px;
+    margin-left: -70px;
+  }
+  h1 a {
+    visibility: hidden;
+  }
+  .video video {
+    width: 480px;
+    margin: -79px;
+  }
+  img {
+    width: 480px;
+    margin: -79px;
+    margin-top: -420px;
+    position: center;
+    padding-top: 520px;
+  }
+  .bottombar {
+    height: 5vh;
+  }
+  .bottombar p {
+    font-size: 16px;
+    color: #ffffff;
+    margin: 10px;
+  }
+  .bottombar a {
+    font-size: 1rem;
+  }
+}

@@ -1,0 +1,346 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* The navigation bar */
+
+.navbar {
+  z-index: 100;
+  overflow: hidden;
+  background: rgb(34, 140, 195);
+  background: linear-gradient(
+    270deg,
+    rgba(34, 140, 195, 1) 16%,
+    rgba(255, 255, 255, 1) 54%
+  );
+
+  position: fixed; /* Set the navbar to fixed position */
+  top: 0; /* Position the navbar at the top of the page */
+  width: 100%; /* Full width */
+}
+.navbar {
+  width: 100%;
+  height: 11vh;
+  margin-top: 0px;
+  padding-top: 30px;
+  /* display: inline-block; */
+  font-size: 16px;
+  /* border: border-box;
+  border: 1px solid red; */
+}
+
+.work {
+  color: black;
+  text-underline-position: under;
+  cursor: pointer;
+  padding: 20px;
+}
+.about {
+  color: grey;
+  text-decoration: none;
+  padding-right: 20px;
+  cursor: pointer;
+}
+.contact {
+  color: grey;
+  text-decoration: none;
+  padding-left: 0;
+  padding-right: 20px;
+  cursor: pointer;
+}
+
+.about:hover {
+  color: black;
+  text-decoration: underline;
+}
+.contact:hover {
+  color: black;
+  text-decoration: underline;
+}
+
+.logo-name {
+  color: white;
+  float: right;
+  margin-right: 20px;
+  font-size: 25px;
+  text-decoration: none;
+  font-weight: 100;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+
+
+.wrapper {
+  /* border: border-box;
+  border: 10px solid red; */
+  padding: 0;
+  max-width: 100%;
+  height: auto;
+  margin-left: 0;
+  margin-right: 0;
+  margin-top: 95px;
+}
+
+/* .right {float: right !important;} */
+/* Image zoom on hover + Overlay colour */
+.parent {
+  width: 50%;
+  margin: 0px;
+  height: 375px;
+  /* border: 0px solid none; */
+  overflow: hidden;
+  position: relative;
+  float: left;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.child {
+  height: 100%;
+  width: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.6s;
+}
+
+/* Several different images */
+.bg-one {
+  background-image: url(./img/car.jpeg);
+  background-position: center;
+}
+.bg-two {
+  background-image: url(./img/car1.jpeg);
+  background-position: center;
+}
+.bg-three {
+  background-image: url(./img/car2.jpeg);
+  background-position: center;
+}
+.bg-four {
+  background-image: url(./img/car3.jpeg);
+  background-position: center;
+}
+.bg-five {
+  background-image: url(./img/car4.jpeg);
+  background-position: center;
+}
+.bg-six {
+  background-image: url(./img/car5.jpeg);
+  background-position: center;
+}
+.bg-seven {
+  background-image: url(./img/car6.jpeg);
+  background-position: center;
+}
+.bg-eight {
+  background-image: url(./img/car7.jpg);
+  background-position: center;
+}
+
+.one {
+  display: none;
+  font-size: 35px;
+  font-style: italic;
+  color: #ffffff !important;
+  font-family: fantasy;
+  text-align: center;
+  margin: auto;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  height: 50px;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.parent:hover .child,
+.parent:focus .child {
+  -ms-transform: scale(1.35);
+  -moz-transform: scale(1.35);
+  -webkit-transform: scale(1.35);
+  -o-transform: scale(1.35);
+  transform: scale(1.35);
+}
+
+.parent:hover .child:before,
+.parent:focus .child:before {
+  display: block;
+}
+
+.parent:hover a,
+.parent:focus a {
+  display: block;
+}
+
+.child:before {
+  content: "";
+  display: none;
+  height: auto;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: rgba(52, 73, 94, 0.75);
+}
+
+
+
+.hello {
+  display: none;
+}
+
+.bottombar {
+  z-index: 100;
+  overflow: hidden;
+  background: rgb(34, 140, 195);
+  background: linear-gradient(
+    90deg,
+    rgba(34, 140, 195, 1) 16%,
+    rgba(255, 255, 255, 1) 54%
+  );
+
+  position: fixed;/* Set the navbar to fixed position */
+  bottom: 0; /* Position the navbar at the top of the page */
+  width: 100%; /* Full width */
+}
+
+.bottombar {
+  width: 100%;
+  height: 10vh;
+  /* border: border-box;
+  border: 2px solid green; */
+}
+
+.bottombar a{
+  float: right;
+  color: rgb(0, 0, 0);
+  /* border:1px solid rgb(12, 24, 185) ; */
+  margin: 10px;
+  text-decoration: none;
+  font-size: 1.5rem;
+}
+p{
+  float: left;
+  left: 0%;
+  bottom: 0%;
+  font-size: 18px;
+  margin: 40px;
+  margin-left: 1px;
+}
+
+.bottombar a:hover{
+  color: blue;
+  transform: rotate(360deg);
+  transition: all 1s;
+}
+.bottombar{
+    height: 5vh;
+  }
+  .bottombar p{
+    font-size: 16px;
+    color: #ffffff;
+    margin: 10px;
+  }
+  .bottombar a {
+    font-size: 1.2rem;
+  }
+
+
+/* Media Queries */
+@media screen and (max-width: 960px) {
+  .parent {
+    width: 100%;
+    margin: 0px 0px;
+  }
+  .wrapper {
+    padding: 0px 0px;
+    margin-top: 70px;
+  }
+  .navbar{
+    font-size:15px ;
+    height: 5vh;
+  }
+  .logo-name{
+    font-size: 16px;
+    margin-top: -20px;
+    margin-right: 10px;
+  }
+  .bottombar{
+    height: 5vh;
+  }
+  .bottombar p{
+    font-size: 16px;
+    color: #ffffff;
+    margin: 10px;
+  }
+  .bottombar a {
+    font-size: 1.2rem;
+  }
+}
+@media screen and (max-width: 1200px) {
+  .parent {
+    width: 50%;
+    margin: 0px 0px;
+  }
+  .wrapper {
+    padding: 0px 0px;
+    margin-top: 80px;
+  }
+  .navbar{
+    font-size:18px ;
+    height: 5vh;
+  }
+  .logo-name{
+    font-size: 20px;
+    margin-top: -20px;
+    margin-right: 10px;
+  }
+  .bottombar{
+    height: 5vh;
+  }
+  .bottombar p{
+    font-size: 16px;
+    color: #ffffff;
+    margin: 10px;
+  }
+  .bottombar a {
+    font-size: 1.2rem;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .parent {
+    width: 100%;
+    margin: 0px 0px;
+  }
+  .wrapper {
+    padding: 0px 0px;
+    margin-top: 0px;
+  }
+  .navbar{
+    font-size:13px ;
+    height: 5vh;
+  }
+  .logo-name{
+    font-size: 16px;
+    margin-top: -20px;
+    margin-right: 10px;
+  }
+  .bottombar{
+    height: 5vh;
+  }
+  .bottombar p{
+    font-size: 16px;
+    color: #ffffff;
+    margin: 10px;
+  }
+  .bottombar a {
+    font-size: 1rem;
+  }
+}
+

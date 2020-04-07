@@ -1,0 +1,154 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* The navigation bar */
+
+.navbar {
+  z-index: 100;
+  overflow: hidden;
+  background: rgb(34, 140, 195);
+  background: linear-gradient(
+    270deg,
+    rgba(34, 140, 195, 1) 16%,
+    rgba(255, 255, 255, 1) 54%
+  );
+
+  position: fixed; /* Set the navbar to fixed position */
+  top: 0; /* Position the navbar at the top of the page */
+  width: 100%; /* Full width */
+}
+.navbar {
+  width: 100%;
+  height: 10vh;
+  margin-top: 0;
+  padding-top: 30px;
+  display: inline-block;
+  font-size: 16px;
+  /* border: border-box;
+  border: 1px solid red; */
+}
+
+.work {
+  color: grey;
+  text-decoration: none;
+  padding: 20px;
+  cursor: pointer;
+}
+.about {
+ color: black;
+  text-underline-position: under;
+  cursor: pointer;
+  padding-right: 20px;
+}
+.contact {
+  color: grey;
+  text-decoration: none;
+  padding-left: 0;
+  padding-right: 20px;
+  cursor: pointer;
+}
+
+.work:hover {
+  color: black;
+  text-decoration: underline;
+}
+.contact:hover {
+  color: black;
+  text-decoration: underline;
+}
+
+.logo-name {
+  color: black;
+  float: right;
+  margin-right: 20px;
+  font-size: 25px;
+  text-decoration: none;
+  font-weight: 100;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+
+.text{
+ margin: 150px;
+ margin-left: 90px;
+ /* box-sizing: border-box;
+ border: 30px solid red; */
+ font-size: 17px;
+ width: 900px;
+ 
+
+}
+
+span{
+ color: grey;
+}
+.oskar{
+ color: rgb(90, 14, 37);
+}
+
+.bottombar {
+  z-index: 100;
+  overflow: hidden;
+  background: rgb(34, 140, 195);
+  background: linear-gradient(
+    90deg,
+    rgba(34, 140, 195, 1) 16%,
+    rgba(255, 255, 255, 1) 54%
+  );
+
+  position: fixed;/* Set the navbar to fixed position */
+  bottom: 0; /* Position the navbar at the top of the page */
+  width: 100%; /* Full width */
+}
+
+.bottombar {
+  width: 100%;
+  height: 10vh;
+  margin: 100px;
+  margin-left: 0px;
+  margin-bottom:-10px ;
+  /* border: border-box;
+  border: 2px solid green; */
+}
+
+.bottombar a{
+  float: right;
+  color: rgb(0, 0, 0);
+  /* border:1px solid rgb(12, 24, 185) ; */
+  margin: 10px;
+  text-decoration: none;
+}
+p{
+  float: left;
+  left: 0%;
+  bottom: 0%;
+  font-size: 18px;
+  margin: 40px;
+  margin-left: 1px;
+}
+
+.bottombar a:hover{
+  color: blue;
+  transform: rotate(360deg);
+  transition: all 1s;
+}
+
+.text {
+  display: flex;
+}
+
+.column {
+  flex: 50%;
+}
+
+.columnn{
+ float: right;
+ margin-top: 290px;
+ margin-left: -200px;
+ width: 100%;
+}
+span{
+ color: rgb(63,94,251);
+ color: radial-gradient(circle, rgba(63,94,251,1) 44%, rgba(252,70,107,1) 100%);
+}
